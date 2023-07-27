@@ -1,0 +1,69 @@
+*{ box-sizing: border-box; margin: 0; padding: 0;}
+        body { font-family:Verdana, Geneva, Tahoma, sans-serif;color: aliceblue; 
+            background-color: rgb(0, 0, 0);}
+
+        #menuInicial { position: fixed;z-index: 2; top: 0; left: 0; width: 0; height: 100vh; overflow-x: hidden; transition: all 0.5s linear; background-color: black;}
+
+        #contMenu { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+
+        .btnMenu {background: transparent; border: none; width: 12vw; height: 6vh; background: transparent; color: aliceblue;}
+        #btnOpenMenu { position:absolute; z-index: 1; top: 3vh; left: 3vw; font-size: xx-large;}
+
+        
+            .linkMenuInicial { margin-top: 3vh;}
+        
+        header {width: 100%; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-position: center; background-size: cover;}
+
+        #headerHome { background-image: url("./imgHome/promoter-balada-1.webp");}
+        #headerFestas { background-image: url("./festas/festas.jpg");}
+        #headerShows { background-image: url("./shows/shows.jpg");}
+        #headerCasaDoKit { background-image: url("./kit/kit1.webp");}
+
+        hgroup { background-color: rgba(0, 0, 0, 0.77);padding: 2em; border-radius: 15px; width:96%;}
+        .slogan { color:aliceblue; text-align: center;}
+        nav { display: flex;}
+        .navBarTopFixed { position: fixed; top: 0; width: 100%; height: max-content;z-index: 1;}
+
+        .linha {width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;}
+        .coluna { width: 96%; margin: 2% auto; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+        .coluna70 { width: 70%;margin: 2% auto; display:flex; align-items: center; justify-content: center;}
+        .coluna30 { width: 30%;margin: 2% auto; display: flex; align-items: center; justify-content: center;}
+        .caixa { width: 94%; margin: 3% auto; display:block; color:aliceblue; padding: 2em; border-radius: 15px;}
+
+        img {width: 100%;}
+        .imgP { width: 85%; border-radius: 470px;}
+
+        span { text-align: center; padding: 1rem;}
+        
+        .titulo1 { color:blueviolet;}
+        .titulo2 { color:lawngreen;}
+        .titulo3 { color:blue;}
+        
+        a { text-decoration: none; color: aliceblue;text-align: center;}
+
+        .linkMenu {border-left: 8px solid  lawngreen; width: 16%; margin: 1% auto; 
+         background-color: rgba(36, 36, 36, 0.895); color:aliceblue;
+        text-align: center; text-decoration: none; padding: 1rem;font-size:x-large;}
+        .linkMenuB {border-left: 8px solid  blue; width: max-content; margin: 1% auto; 
+         background-color: rgba(36, 36, 36, 0.895); color:aliceblue;
+        text-align: center; text-decoration: none; padding: 1rem;font-size:x-large;}
+
+        .linkCard1 {background-image:url("./festas/festas.jpg");background-size:cover; background-position: center; height: 15vh; border-radius: 15px; font-size: larger;color:whitesmoke;}
+        .linkCard2 {background-image:url("./shows/shows.jpg");background-size:cover; background-position: center; height: 15vh; border-radius: 15px; font-size: larger; color:whitesmoke;}
+
+        .textFestas,.textShows {background-color: rgba(0, 0, 0, 0.829); width:max-content; padding: 0.5rem; border-radius: 10px;}
+        .textColor1 { color:darkgray;}
+        
+        .bgCollor {background-color:rgb(36, 36, 36); width: 96%; margin: 2% auto;}
+        .bgIMG1 { background-image: url("./festas.jpg");background-size:cover; background-position: center; height: 12rem;}
+
+        .borderLeft { border-left: 10px solid blueviolet;}
+        .borderLeft2 { border-left: 10px solid lawngreen;}
+        .borderLeft3 { border-left: 10px solid blue;}
+
+        @media only screen and (max-width: 900px){ 
+            nav { flex-direction: column; width:100%;}
+            .linkMenu { width: 100%;}
+            .linkMenuB { width: 100%;}
+            .imgP { border-radius: 430px;}
+        }
